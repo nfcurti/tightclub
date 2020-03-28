@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="31px" viewBox="0 0 32 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Vector Smart Object</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="0" y="6" width="32" height="31" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1109.000000, -35.000000)">
+            <g id="Head" transform="translate(55.000000, 29.000000)">
+                <g id="cart" transform="translate(1054.000000, 0.000000)">
+                    <g id="Vector-Smart-Object">
+                        <image x="0" y="6" width="32" height="31" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAAAXNSR0IArs4c6QAAAptJREFUSA29ld+LTVEUx+8M41ehvPid8iuSycgTDRcviigexNtceaDUPPgjpJRHSlcpb8q7H+k+meRFUvJjDCHj54OUwTU+n3vO0T3n3Hsn2eeu+py199ln1nfttdfd01PCKpVKrz6xarX6OxkX7XsRn45IvRnebS9aOInvzhUfaOIF46PQFevJqrD7C7w7AneyawXMD6bOPha4gZ8HKwoQTELOZXDAieefNXduE96mGU9nF0PMqfI24uyCyVwFEP3Cwn0oQ1G2jMATaOUTiBU9hgEynV9QBibwwdi5CsSCt+K1wXge2i0h4DuDtkvgLmvfYLcfFWCdK8DZ/EC0BjsLEDekCYw7aFcB1+yDfvpggZPA5hFMmYB94EVVxLW8lLgdm7DEMTzio7dQhmBGRRcSrA86NmEiaBXKySSQd/da5wpE35Ru4kP3geevNSrQ6iqOlqOnCdgHO+B69GrqJ2X2b+z01TFrY78y9rjSex8dE6APxgn2kO+8D1IJ8N5f0HJQZE3MKrz4bhZo/l95Bc/B++UKPIOP0Nidvq0hdI7F/XAemgUUmQHaLxgDRZ6CAo71o/G9wjBvlqqlITyThVMwDDbOTxiFRCARcf4SEZP4Z2uZAOKelSXfAFfhEowgYhJBLdcDiC9CoQYmtxXRe0EVM8FyCbB+EWbDFsTH8IVaKgF234+aDTfUDXF3lkqA+V6ow2OS2YQv2h5kE1iP4jTw99oN68smcBbVy7AOvsJrCGn+E3KTb+AT1HM/Q0p/jYVDMAkn6AWb8r+NuHMIMgIb4TvsIXbN6/Sv8dFiJoprJneyMQrzGCSM4prX9DEHqQSYf45xTXsSuSBPr2YbPLFG7FQClGSC1c1QgcMwBEGM2F7dxj4O++AMlP4At5Sl9uF1QgEAAAAASUVORK5CYII="></image>
+                        <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="30px" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Vector Smart Object</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="1146" y="6" width="24" height="30" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1201.000000, -35.000000)">
+            <g id="Head" transform="translate(55.000000, 29.000000)">
+                <g id="Vector-Smart-Object">
+                    <image x="1146" y="6" width="24" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAeCAYAAAA2Lt7lAAAAAXNSR0IArs4c6QAAAqBJREFUSA3VlUFIVFEUhp2swKKFUFlgBOOihMCGtu1KRCtQC1tkIBOWQRTRolqFUOhCCWthuZjAalGUlEUh2K5Ni5oWQqsEKbAgsIhCamHfH/cNb+bcO2K+TQc+7nvn/uc/b+69702qYpHIZrM1SM5CK6SdfJrxEVzN5XKfXc47pLxZl8RcprfhN9yHPCgy0AGr4ChN1MwbwQaYN1PxFB5ADyZzcQfmq7m/AYdgP/PP4/PRtbcBxesQaBleQjvFC1FBfESn+jHYDWl03+Pzul5RmnD3JxirQE/uNZfOzfU4rWpMhBrsQzmOQdkNlJvTjHOpGhOhBttQvjHqcEJa1ZgINViJct6owwlpVWMi1OAjyu1GHU5IqxoToQaTKNs4JatNRUnCadpIq8ZEqMFNlBvgvKmwCWmkVY2JSpMhkc/n5zKZjI5nL+Ms994N5+m70QxIx2l6zGjCuzFOdYVxI4xgpM+C3tq3oNgJOv974TpI6w3vmxxXYn6A+0uwK57n+jXoyZ+U5ItuF20QqWm0hes6d/8e4w/R3P8z8iuqxFKeuOwSYVaPWSfsgR2wFhQ/YApewB2W6x2jN7wNME6jHgT94XyBCdCmzoJiM2jTm2A96A/nHI30iS8K0wDzIyhGQF9SnZ57FP5iNIFWb/ph6IUaOI72LmMhihpQcJqZIbgFpxD/LCjLXFC3hmm9D1k4Q921SF5ogKid5EPoR3AxEixlxKMP/QU4iMeYav82YGIT19qoZ0xoif458NIStUA9Xp+ij91lEvqmn4TlhjzkJc+KFB11ImZAazes5HIDTzXRXm7VL9CHTKdkFJIKecmzQw0aYZKn18uTSDgv/QE1qkEDvErEudhEng36P6iFOtatizHJ0Je3Vg2+wTEHQ6Lx9Q/r5r2lZZAcGgAAAABJRU5ErkJggg=="></image>
+                    <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

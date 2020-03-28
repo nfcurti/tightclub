@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Vector Smart Object</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="964" y="6" width="30" height="30" id="rect-1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1019.000000, -35.000000)">
+            <g id="Head" transform="translate(55.000000, 29.000000)">
+                <g id="Vector-Smart-Object">
+                    <image x="964" y="6" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAsZJREFUSA29ls9LVFEUx5sswlBMEncSkbRKaFYakSWtJFpUCC5qM4tIorUJkUjBCPoHSMhQkNDChRZBoVSQoORi2mW5ERGSyH5KIpH1+Q73DU+ac9+8maYDX85795zv+d5f796X2GFYKpXaRagTXACtoBmobQssgTnwEExkMplNfCxLFMpGtIv2NDgEXoMp8A58BLVAnWh3+IC/CUbpwG98UbZNGMFqWHfARfAI9FMsiy9o5DcR6AVXgDrXTf5XfKTlhZ3oYxht4DIF7keyXQLcYzyOg0+gHe5nFzLdzlBEI5XomTii4pM/i5P4PjBOR6rwXssJk6g11fT2UOS5l2EE4S0TOguOg2tGWr45gah26gJYhKxdXJZR7zYFroIm6q1bxTRiiWn3DlhJMduHyddgLvl4EtZ3+pbe6bss26jzhSKT4LyvmIR1ODzzJZUQm4ajjWqahJvBGzOjtID2TA3r3WjRJaz1+G4llNj+w/H2WnwJ6+w1EyxiRPseFzfPcAkvgcMu8V851dsAq1ZBCWs3n7QSSmw/Be8VO9y8NCSsq+0oG+EIvmyjji4afUqqa5qEJ4Cm5IaZFS/QQ7rW+K6PVpXNZn8lk8lvJPXh53lf9BF8MUZ7kPgDMMw0P/HlasSyUaDEMcgtaohr8Org6MRSx9NR/Jyw2wTdJK+AFxQ5HUUMx91IX9KmTk9T72c4Xug5/yOgIAXqcbrQO8AIuEWR9/iCRr42km4i/fro10hHpf5I+uAN4k3bJqwsiukS133aD2rAUzAFFoD+MGrBAXACnAO7wRAYRGwT/nWeNdVe8b+EIeSMAhLV1aZPow3oPTAdDvNAa3oPwbUgIF+MuCkcLuSK6cDX0apjcBUx83Bw+d6RFy2sYnHNN3KtZ8WMM2GGs0EzlJbXeyBWUWGJWOIVF7bEK7rGwbQGPrTmDUHbf/OI75fYH2925Dr5bmrNAAAAAElFTkSuQmCC"></image>
+                    <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,90 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+a{
+	font-family: 'Lato';
+	font-size: 15px;
+	text-decoration: bold;
+	color: inherit !important;
+}
+
+a:hover{
+
+	color: inherit!important;
+}
+
+.btn-success{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.newsbox{
+	background-color: white;border-radius: 0.5em;padding-top: 1em;width: 25em;height: 9.9em;position: absolute;bottom: 7em;right: 1em
+}
+
+.bgmain{
+	background-image: url(https://wallpaperaccess.com/full/626610.jpg);height: 35em;background-size: cover;    margin-right: 0em;
+}
+
+.item{
+	background-color: white;border-radius: 0.5em;padding-top: 1em;width: 12em;height: 13em;position: absolute;bottom: 7em;left: 1em
+}
+
+.navbar-light .navbar-brand{
+	color: rgba(0,0,0,1) !important
+}
+
+.navbar-brand{
+	text-align: center !important;
+    width: 100% !important;
+    position: absolute !important;
+}
+
+.coolContainer{
+	    margin-top: -0.5em;
+    width: 100%;
+}
+
+.coolContainer p:first-of-type {
+    float: left;
+    opacity: 0.4
+}
+
+.coolContainer p:last-of-type {
+    float: right;
+    opacity: 0.8;
+    color: #FE5068 !important;
+}
+
+.newsletterinput{
+	border:1px solid #52943850;
+}
+
+.newsletterinput::placeholder{
+	font-family: 'Lato';
+}
+
+.newsletterinput{
+	font-family: 'Lato';
+	font-size: 0.7em;
+}
+
+.nav-link:hover{
+	background-color: rgba(0,0,0,0.1)
+}
+
+
+

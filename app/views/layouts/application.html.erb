@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tight Club | 24/7 Delivery Service</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 4em">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+      <ul class="navbar-nav mr-auto super" style="width: 35em;z-index: 10000">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Shop Now </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tight Club</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link float-right">
+      <% if user_signed_in? %>
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %>
+      <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %>
+      <% end %>
+      </p>
+        </li>
+        <li class="nav-item">
+          <p class="nav-link float-right">
+      <% if user_signed_in? %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+      <% else %>
+        <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+      <% end %>
+      </p>
+        </li>
+      </ul>
+      
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">
+            <%=image_tag("loupe.svg", width: "15", alt: "Loupe", style: "margin-left: 1em")%> 
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><%=image_tag("cart.svg", width: "15", alt: "Cart", style: "margin-left: 1em")%></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"><%=image_tag("user.svg", width: "15", alt: "User", style: "margin-left: 1em")%></a>
+        </li>
+      </ul>
+      </div>
+
+    </div>
+    <a class="navbar-brand" href="/"><%=image_tag("logo.svg", width: "100", alt: "Logo")%></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  </head>
+
+  <body>
+    <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+    <%= yield %>
+  </body>
+  <!-- footer-section start -->
+        <footer class="footer-section">
+            <div class="footer-top" style="background-color: #087f23;color: white;padding: 1em;    line-height: 0.5em;">
+                <div class="container">
+                    <div class="row" >
+                        <div class="col-md-3">
+                            
+                            <h3 style="margin-bottom: 1em">Tight Club</h3>
+                            <div class="footer-herb">
+                              <%=image_tag("herb2.png", alt: "Herb 2", width:'150')%>
+                           
+                            </div>
+                            <div class="footer-icons">
+                                <p>
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 quick-links">
+                            <h3 style="margin-bottom: 2em">Quick Links</h3>
+                            <p><a href="#">Home</a></p>
+                            <p><a href="#">Shop Now</a></p>
+                            <p><a href="#">Register</a></p>
+                            <p><a href="#">Tight Club</a></p>
+                            <p><a href="#">Contact Us</a></p>
+                        </div>
+                        <div class="col-md-5">
+                            <h3 style="margin-bottom: 2em">Contact Us</h3>
+                            <p>Address: 2000 Quadra Street Victoria, Cananda</p>
+                            <p>Email: info@tightsmoke.com</p>
+                            <p>Phone: +5555555555</p>
+                            <p>Phone 2: +5555555556</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" style="background-color: #d2f2c1;padding-top: 1em">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8" >
+                            <p style="opacity: 0.7">Copyright 2020 TightSmoke. All Rights Reserved </p>
+                        </div>
+                        <div class="col-md-4">
+                            <P style="opacity: 0.7">Designed and Developed By Ginevar Tech</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
