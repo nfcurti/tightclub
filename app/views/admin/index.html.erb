@@ -1,0 +1,52 @@
+<div class="container">
+	<h3 style="margin-top: 2em">Update Orders</h3>
+	
+		<label for="exampleFormControlSelect1">Order List</label>
+		  <table class="table">
+		    <thead>
+		      <tr>
+		        <th>User ID</th>
+		        <th>Shipping Address</th>
+		        <th>Item</th>
+		        <th>Quantity</th>
+		        <th>Total Price</th>
+		        <th>Status</th>
+		        <th>Actions</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		   	<% @orders.each do |order|%>
+		      <tr>
+		        <td><%=order.client%></td>
+		        <td><%=User.where("id":order.client).first.address1%> <%=User.where(id:order.client).first.address2%>, <%=User.where("id":order.client).first.city%>, <%=User.where(id:order.client).first.zip%>  <%=User.where(id:order.client).first.state%>, <%=User.where(id:order.client).first.country%></td>
+		        <td><%=order.item%></td>
+		        <td><%=order.quantity%></td>
+		        <td><%=Product.where(name:order.item).first.price*order.quantity.to_i%></td>
+		        <td><%=order.status%></td>
+		        
+		        <td><button onclick="document.getElementById('confirm_order_id').value = '<%=order.id%>';document.getElementById('confirm_form').submit()">Confirm</button> <button onclick="document.getElementById('ship_order_id').value = '<%=order.id%>';document.getElementById('ship_form').submit()">Ship</button></td>
+		      </tr>
+		    <% end %>
+		    </tbody>
+		  </table>
+	
+</div>
+    <div style="background-image: url(https://www.leafbuyer.com/blogs/content/uploads/2019p/05/about-to-roll-a-joint-700px.jpg);background-size: cover;background-position: 80%;height: 20em;margin-top: 1em">
+      <div class="container " style="padding-top: 5em">
+        <h6 style="font-size: 0.8em;text-align: center;color: white">Subscribe to get our latest updates!</h6>
+        <div class="input-group mb-3" style="width: 20em;margin: auto;margin-top: 1em">
+          <input type="text" class="form-control newsletterinput" placeholder="Please enter your email address" aria-label="Please enter your email address" aria-describedby="basic-addon2">
+        </div>
+        <div class="input-group-append" style="">
+            <button class="btn  btn-success" type="button" style="width: 20em;margin: auto;background-color: #087f23;color: rgba(0,0,0,0.7);"><b style="color: white">Subscribe now!</b></button>
+        </div>
+      </div>
+    </div>
+<form id="confirm_form" name="confirm" method="POST" action="/admin/confirm">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+		        <input id="confirm_order_id" type="" name="confirm_order_id"  style="display: none">
+		        </form>
+<form id="ship_form" name="ship" method="POST" action="/admin/ship">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+		        <input id="ship_order_id" type="" name="ship_order_id"  style="display: none">
+		        </form>

@@ -7,8 +7,14 @@
 	<hr>
 	<div class="container">
 		<h4>Past Orders</h4>
-	  <p>You have no past orders</p>
-		</div>
+		<%if Order.where(client: current_user.id).present?%>
+			<% Order.where(client: current_user.id).each do |order|%>
+		  			<p><%=order.created_at %> | You bought <%=order.item%>, <%=order.quantity%> g, <%=order.status%></p>
+		  	<%end%>
+		<%else%>
+			<p>You have not made any order yet</p>
+		<%end%>
+	</div>
 		<hr>
 	</div>
 	<div class="container" style="margin-left: 5.2em">

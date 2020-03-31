@@ -3,5 +3,6 @@ class TightclubController < ApplicationController
 
 
   def index
+  	p Order.all
   end
 end
