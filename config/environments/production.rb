@@ -92,7 +92,7 @@ config.webpacker.check_yarn_integrity = false
 
 
   config.mailer_sender = "nicolascurti75@gmail.com"
-  config.action_mailer.default_url_options = { :host => 'desolate-ocean-23269.herokuapp.com', port: 4001 }
+  config.action_mailer.default_url_options = { :host => 'desolate-ocean-23269.herokuapp.com' }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
