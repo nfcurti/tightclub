@@ -1,4 +1,4 @@
-class HomeController < ApplicationController
+class ShopController < ApplicationController
   def index
   	@products = Product.all
   end

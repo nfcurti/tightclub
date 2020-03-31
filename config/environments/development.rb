@@ -52,7 +52,18 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
-
+config.mailer_sender = "nicolascurti75@gmail.com"
+  config.action_mailer.default_url_options = { host: "localhost", port: 4001 }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+ :address              => "smtp.gmail.com",
+ :port                 => 587,
+ :user_name            => 'nicolascurti75@gmail.com',
+ :password             => '38069123',
+ :authentication       => "plain",
+  }
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
 
@@ -60,6 +71,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 config.webpacker.check_yarn_integrity = false
-  config.action_mailer.default_url_options = { host: 'localhost', port: 4001 }
 
 end

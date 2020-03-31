@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="container item" >
+      <div class="container item" style="width: 15em">
         <div class="container" style="font-size: 0.5em;position: absolute;line-height: 0em;opacity: 0.8;margin-top: 5em;margin-left: -1em">
           <p style="margin-bottom: 1.3em">THC: 25%</p>
           <p>CBD: 1.2%</p>
@@ -31,46 +31,18 @@
       </div>
     </div>
     <h3 style="font-weight: 500; font-size: 1.3em;text-align: center;opacity: 0.7; margin-top: 1em">Featured Products</h3>
-    <div class="container row" style="margin: auto;margin-top: 2em">
-      <div class="col-4" style=";height: 1em">
-        
-        <img src="assets/p1.svg" height="150em" style="margin: auto;display: block">
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: 0.5em">CBD Gummies</p>
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: -1em">$5</p>
-      </div>
-      <div class="col-4">
-        
-        <img src="assets/p2.svg" height="150em" style="margin: auto;display: block">
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: 0.5em">CBD Oil 10x</p>
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: -1em">$20</p>
-      </div>
-      <div class="col-4" style=";height: 1em">
-        
-        <img src="assets/p3.svg" height="150em" style="margin: auto;display: block">
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: 0.5em">Pure CBD Tropical Oil</p>
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: -1em">$50</p>
-      </div>
-    </div>
-    <div class="container row" style="margin: auto;margin-top: 2em">
+
+    <div class="container row" style="margin: auto;margin-top: 2em;height: 15em">
+      <% @products.first(3).each do |prod|%>
       <div class="col-4" style=";height: 1em">
         
         <img src="assets/bb.svg" height="150em" style="margin: auto;display: block">
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: 0.5em">Bruce Banner AAAA+</p>
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: -1em">$5</p>
+        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: 0.5em"><%=prod.name%></p>
+        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: -1em">$<%=prod.price%>/gr</p>
       </div>
-      <div class="col-4">
-        
-        <img src="assets/p4.svg" height="150em" style="margin: auto;display: block">
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: 0.5em">CBD Oil 10x</p>
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: -1em">$20</p>
-      </div>
-      <div class="col-4" style=";height: 1em">
-        
-        <img src="assets/bb.svg" height="150em" style="margin: auto;display: block">
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: 0.5em">Pure CBD Tropical Oil</p>
-        <p style="font-size: 0.8em;text-align: center;opacity: 0.7;margin-top: -1em">$50</p>
-      </div>
+      <%end%>
     </div>
+    
     <div class="input-group-append" style="">
             <button class="btn  " type="button" style="width: 20em;margin: auto;background-color: #087f23;margin-bottom: 1em;color: rgba(0,0,0,0.7);"><b style="color: white">More Products</b></button>
     </div>
@@ -103,8 +75,8 @@
                     Get Up To 70% Off All Sales Are Final
                 </h3>
                 <div class="input-group-append" style="">
-            <button class="btn  " type="button" style="width: 20em;;background-color: #087f23;margin-bottom: 1em;color: rgba(0,0,0,0.7);margin-top: 1em"><b style="color: white">Shop Now</b></button>
-    </div>
+                        <button class="btn  " type="button" style="width: 20em;;background-color: #087f23;margin-bottom: 1em;color: rgba(0,0,0,0.7);margin-top: 1em"><b style="color: white">Shop Now</b></button>
+                </div>
             </div>
 
         </div>

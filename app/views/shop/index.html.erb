@@ -1,0 +1,99 @@
+<div class="container" style="padding-top: 2em;margin-bottom: 2em">
+<h3 style="margin-bottom: 2em;text-align: center">Tight Club - Shop</h3>
+  <% @products.each do |prod|%>
+  <div class="container row" style="margin-bottom: 2em">
+	  <div class="col-2" style="height: 10em">
+	  	<img src="assets/bb.svg" height="150em" style="margin: auto;display: block">
+	  </div>
+	  <div class="col-8" style="height: 10em;margin-left: 1em;">
+	  	<h6><%=prod.name%></h6>
+	  	<p style="overflow: scroll;height: 9em"><%=prod.desc%></p>
+	  
+	  </div>
+	  <div class="col-4" style="line-height: 0.2em;font-size: 0.7em;position: absolute;">
+		<p><b>THC:</b> <%=prod.thc%>%</p>
+		<p><b>CBD:</b> <%=prod.cbd%>%</p>
+	  </div>
+	  <div class="input-group-append" style="">
+            <button data-toggle="modal" data-target="#exampleModal" class="btn  btn-success" type="button" style="width: 20em;margin: auto;background-color: #087f23;color: rgba(0,0,0,0.7);margin-top: 2em"><b style="color: white">Buy Now</b></button>
+        </div>
+  </div>
+  <hr>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 10000">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <style type="text/css">
+      	.modal-body:hover{
+      		background-color: rgba(0,0,0,0.1);
+      		cursor: default;
+      	}
+      </style>
+      <form id="create_order" method="POST" action="/orders">
+      <div class="modal-body">
+        1x <%=prod.name%> | <%=prod.thc%>% THC <%=prod.cbd%>% CBD 
+        <input type="" name="prod" value="<%=prod.name%>" style='display: none'  >
+      </div>
+      <div class="form-group container">
+	    <label for="exampleFormControlSelect1">Quantity (Grams)</label>
+	    <select id="q" class="form-control" name="q" onchange="document.getElementById('totalprice').value = document.getElementById('q').value*<%=prod.price%>"> 
+	      <option>1</option>
+	      <option>5</option>
+	      <option>10</option>
+	      <option>15</option>
+	      <option>20</option>
+	    </select>
+	  </div>
+	  <div class="form-group container">
+	    <label for="exampleFormControlSelect1">Payment Method</label>
+	    <select name="pm" class="form-control" id="exampleFormControlSelect1">
+	      <option>Cash</option>
+	    </select>
+	  </div>
+	  <hr >
+	  <div class="" style="margin-top: 0em;margin-left: 1em;margin-bottom: 1em">
+        <b>Total: </b><input id="totalprice" type="" name="totalprice" value="<%=prod.price%>" style="width: 2em;border:none" >   $
+      </div>
+      <div class="form-group container">
+	    <label for="exampleFormControlSelect1">Billing Address</label>
+	   
+	    <div style="font-size: 0.7em;margin-top: 1em;line-height: 0.3em">
+	    		  <p><%=current_user.address1%> | <%=current_user.address2%></p>
+
+	  <p><%=current_user.city%>, <%=current_user.zip%>  <%=current_user.state%>  </p>
+
+	  <p><%=current_user.country%></p>
+	    </div>
+	  </div>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input type="" name="client_id" value="<%=current_user.id%>" style="display: none">
+    <input type="" name="status" value="unconfirmed" style="display: none">
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button onclick="document.getElementById('create_order').submit()" type="button" class="btn btn-primary">Buy</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <%end%>
+
+</div>
+    <div style="background-image: url(https://www.leafbuyer.com/blogs/content/uploads/2019p/05/about-to-roll-a-joint-700px.jpg);background-size: cover;background-position: 80%;height: 20em;margin-top: 1em">
+      <div class="container " style="padding-top: 5em">
+        <h6 style="font-size: 0.8em;text-align: center;color: white">Subscribe to get our latest updates!</h6>
+        <div class="input-group mb-3" style="width: 20em;margin: auto;margin-top: 1em">
+          <input type="text" class="form-control newsletterinput" placeholder="Please enter your email address" aria-label="Please enter your email address" aria-describedby="basic-addon2">
+        </div>
+        <div class="input-group-append" style="">
+            <button class="btn  btn-success" type="button" style="width: 20em;margin: auto;background-color: #087f23;color: rgba(0,0,0,0.7);"><b style="color: white">Subscribe now!</b></button>
+        </div>
+      </div>
+    </div>
+

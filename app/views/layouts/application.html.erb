@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Tight Club | 24/7 Delivery Service</title>
-    <%= csrf_meta_tags %>
+    
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -14,15 +14,21 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 4em">
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-      <ul class="navbar-nav mr-auto super" style="width: 35em;z-index: 10000">
+      <ul class="navbar-nav mr-auto super" style="width: 35em;z-index: 10000;margin-top: 1em;margin-left: 2em">
         <li class="nav-item ">
-          <a class="nav-link" href="#">Shop Now </a>
+          <a class="nav-link" href="/shop">Shop Now </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tight Club</a>
+          <a class="nav-link " href="/tightclub">Tight Club</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">Contact</a>
+          <a class="nav-link " href="/faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/gifts">Gift Cards</a>
         </li>
         <li class="nav-item">
           <p class="nav-link float-right">
@@ -43,22 +49,7 @@
       </p>
         </li>
       </ul>
-      
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-          <ul class="navbar-nav ml-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="#">
-            <%=image_tag("loupe.svg", width: "15", alt: "Loupe", style: "margin-left: 1em")%> 
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><%=image_tag("cart.svg", width: "15", alt: "Cart", style: "margin-left: 1em")%></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#"><%=image_tag("user.svg", width: "15", alt: "User", style: "margin-left: 1em")%></a>
-        </li>
-      </ul>
-      </div>
+
 
     </div>
     <a class="navbar-brand" href="/"><%=image_tag("logo.svg", width: "100", alt: "Logo")%></a>
@@ -67,7 +58,7 @@
     </button>
   </nav>
   </head>
-
+<%= csrf_meta_tags %>
   <body>
     <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
