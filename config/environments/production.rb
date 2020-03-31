@@ -90,7 +90,7 @@ config.webpacker.check_yarn_integrity = false
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  
+
   config.mailer_sender = "nicolascurti75@gmail.com"
   config.action_mailer.default_url_options = { :host => 'desolate-ocean-23269.herokuapp.com', port: 4001 }
   config.action_mailer.perform_deliveries = true
@@ -100,7 +100,7 @@ config.webpacker.check_yarn_integrity = false
  :address              => "smtp.gmail.com",
  :port                 => 587,
  :user_name            => 'nicolascurti75@gmail.com',
- :password             => '38069123',
+ :password             => '862554zz',
  :authentication       => "plain",
   }
   # Inserts middleware to perform automatic connection switching.
