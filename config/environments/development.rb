@@ -61,7 +61,7 @@ config.mailer_sender = "nicolascurti75@gmail.com"
  :address              => "smtp.gmail.com",
  :port                 => 587,
  :user_name            => 'nicolascurti75@gmail.com',
- :password             => '38069123',
+ :password             => '862554zz',
  :authentication       => "plain",
   }
   # Raises error for missing translations.
