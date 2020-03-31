@@ -100,7 +100,7 @@ config.webpacker.check_yarn_integrity = false
  :address              => "smtp.gmail.com",
  :port                 => 587,
  :user_name            => 'nicolascurti75@gmail.com',
- :password             => '862554zz',
+ :password             => 'lbiooyiyfdqenbow',
  :authentication       => "plain",
   }
   # Inserts middleware to perform automatic connection switching.
