@@ -9,7 +9,7 @@
 		<h4>Past Orders</h4>
 		<%if Order.where(client: current_user.id).present?%>
 			<% Order.where(client: current_user.id).each do |order|%>
-		  			<p><%=order.created_at %> | You bought <%=order.item%>, <%=order.quantity%> g, <%=order.status%></p>
+		  			<p><%=order.created_at %> | You bought <%=order.quantity%> g of <%=order.item%> THC Strain, Order <%=order.status%></p>
 		  	<%end%>
 		<%else%>
 			<p>You have not made any order yet</p>
