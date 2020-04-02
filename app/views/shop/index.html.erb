@@ -6,13 +6,9 @@
 	  	<img src="assets/bb.svg" height="150em" style="margin: auto;display: block">
 	  </div>
 	  <div class="col-8" style="height: 10em;margin-left: 1em;">
-	  	<h6><%=prod.name%></h6>
+	  	<h6><%=prod.name%> | THC: <b><%=prod.thc%>%</b>  CBD: <b><%=prod.cbd%>%</b></h6>
 	  	<p style="overflow: scroll;height: 9em"><%=prod.desc%></p>
 	  
-	  </div>
-	  <div class="col-4" style="line-height: 0.2em;font-size: 0.7em !important;position: absolute;">
-		<p><b style="font-size: 0.7em !important">THC:</b> <%=prod.thc%>%</p>
-		<p><b style="font-size: 0.7em !important">CBD:</b> <%=prod.cbd%>%</p>
 	  </div>
 	  <div class="input-group-append" style="">
             <button data-toggle="modal" data-target="#exampleModal" class="btn  btn-success" type="button" style="width: 20em;margin: auto;background-color: #087f23;color: rgba(0,0,0,0.7);margin-top: 2em"><b style="color: white">Buy Now</b></button>
